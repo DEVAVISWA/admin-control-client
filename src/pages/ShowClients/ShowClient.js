@@ -12,7 +12,7 @@ const ShowClient = () => {
   useEffect(() => {
     setLoading(true);
     axios
-      .get(`http://localhost:3000/client/${id}`)
+      .get(`https://admin-control-server.onrender.com/client/${id}`)
       .then((response) => {
         setClient(response.data);
         setLoading(false);

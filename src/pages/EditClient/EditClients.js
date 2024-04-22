@@ -21,7 +21,7 @@ const EditClients = () => {
     useEffect(() => {
         setLoading(true);
         axios
-            .get(`http://localhost:3000/client/${id}`)
+            .get(`https://admin-control-server.onrender.com/client/${id}`)
             .then((response) => {
                 setName(response.data.name);
                 setEmail(response.data.email);
@@ -50,7 +50,7 @@ const EditClients = () => {
         };
         setLoading(true);
         axios
-            .put(`http://localhost:3000/client/${id}`, data)
+            .put(`https://admin-control-server.onrender.com/client/${id}`, data)
             .then(() => {
                 setLoading(false);
                 navigate("/");

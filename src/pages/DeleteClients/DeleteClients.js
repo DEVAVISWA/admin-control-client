@@ -13,7 +13,7 @@ const DeleteClients = () => {
   const handleDeleteClient = () => {
     setLoading(true);
     axios
-      .delete(`http://localhost:3000/client/${id}`)
+      .delete(`https://admin-control-server.onrender.com/client/${id}`)
       .then(() => {
         setLoading(false);
         navigate("/");

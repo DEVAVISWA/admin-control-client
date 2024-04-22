@@ -18,7 +18,7 @@ const CreateClients = () => {
     const handleSaveClient = () => {
         setLoading(true);
         axios
-            .post("http://localhost:3000/client", {
+            .post("https://admin-control-server.onrender.com/client", {
                 name,
                 email,
                 dob,
