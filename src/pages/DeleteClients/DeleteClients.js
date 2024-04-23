@@ -4,7 +4,6 @@ import Spinner from "../../components/Spinner";
 import axios from "axios";
 import { useNavigate, useParams } from "react-router-dom";
 import { useState } from "react";
-import Navbar from "../../components/Navbar";
 
 const DeleteClients = () => {
   const [loading, setLoading] = useState(false);
