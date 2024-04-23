@@ -1,9 +1,9 @@
-import React, { useEffect } from "react"; // Add missing import statement for useEffect
+import React, { useEffect } from "react"; 
 import BackButton from "../../components/BackButton";
 import axios from "axios";
 import Spinner from "../../components/Spinner";
 import { useNavigate, useParams } from "react-router-dom";
-import { useState } from "react"; // Remove duplicate import statement for useState
+import { useState } from "react"; 
 
 const EditClients = () => {
     const [name, setName] = useState("");
@@ -36,7 +36,7 @@ const EditClients = () => {
                 console.log(error.response.data);
                 setLoading(false);
             });
-    }, []); // Remove extra pair of curly braces
+    }, []);
 
     const handleEditClient = () => {
         const data = {
