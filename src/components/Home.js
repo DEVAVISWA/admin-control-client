@@ -19,7 +19,7 @@ const Home = () => {
           setLoading(false);
         });
     }, []);
-    console.log(clients);
+    // console.log(clients);
     return (
       <div>
             {loading ? (<Spinner />) : <Table clients={clients} />}
