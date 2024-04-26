@@ -18,7 +18,7 @@ const CreateClients = () => {
     const handleSaveClient = () => {
         setLoading(true);
         axios
-            .post("https://admin-control-server.onrender.com/cc", {
+            .post("https://admin-control-server.onrender.com/client", {
                 name,
                 email,
                 dob,
